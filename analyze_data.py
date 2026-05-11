@@ -14,7 +14,8 @@ sample.plot()
 
 plt.title("Sea Surface Temperature (Time Step 0)")
 
-output_file = "results/sst_plot.png"
+timestamp = os.getenv("TIMESTAMP")
+output_file = f"results/sst_plot_{timestamp}.png"
 plt.savefig(output_file)
 
 print(f"Plot saved to {output_file}")

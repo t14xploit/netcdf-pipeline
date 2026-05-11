@@ -3,13 +3,14 @@
 INPUT="data/tos_O1_2001-2002.nc"
 LOG_DIR="logs"
 LOG_FILE="$LOG_DIR/process.log"
-TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 
 mkdir -p logs results
 
+TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+export TIMESTAMP
+
 echo "[$TIMESTAMP] Starting NetCDF pipeline..." >> "$LOG_FILE"
 
-# check file exists
 if [ ! -f "$INPUT" ]; then
     echo "[$TIMESTAMP] ERROR: Input file $INPUT not found!" >> "$LOG_FILE"
     exit 1

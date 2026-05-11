@@ -10,3 +10,138 @@ Plot saved to results/sst_plot.png
 [2026-05-11 14:33:59] SUCCESS: Analysis completed successfully.
 [2026-05-11 14:33:59] NetCDF pipeline finished.
 ------------------------------
+[2026-05-11 14:52:08] Starting NetCDF pipeline...
+[2026-05-11 14:52:08] Running Python analysis: data/tos_O1_2001-2002.nc
+Plot saved to results/sst_plot_None.png
+[2026-05-11 14:52:08] SUCCESS: Analysis completed successfully.
+[2026-05-11 14:52:08] NetCDF pipeline finished.
+------------------------------
+[2026-05-11 14:53:47] Starting NetCDF pipeline...
+[2026-05-11 14:53:47] Running Python analysis: data/tos_O1_2001-2002.nc
+Plot saved to results/sst_plot_None.png
+[2026-05-11 14:53:47] SUCCESS: Analysis completed successfully.
+[2026-05-11 14:53:47] NetCDF pipeline finished.
+------------------------------
+[2026-05-11 14:55:41] Starting NetCDF pipeline...
+[2026-05-11 14:55:41] Running Python analysis: data/tos_O1_2001-2002.nc
+Traceback (most recent call last):
+  File "C:\Users\Kubernetus\Desktop\netcdf-pipeline\analyze_data.py", line 19, in <module>
+    plt.savefig(output_file)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\pyplot.py", line 1250, in savefig
+    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backend_bases.py", line 2186, in print_figure
+    result = print_method(
+        filename,
+    ...<3 lines>...
+        bbox_inches_restore=_bbox_inches_restore,
+        **kwargs)
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backend_bases.py", line 2042, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ~~~~^
+        *args, **{k: v for k, v in kwargs.items() if k not in skip}))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backends\backend_agg.py", line 481, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backends\backend_agg.py", line 430, in _print_pil
+    mpl.image.imsave(
+    ~~~~~~~~~~~~~~~~^
+        filename_or_obj, self.buffer_rgba(), format=fmt, origin="upper",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dpi=self.figure.dpi, metadata=metadata, pil_kwargs=pil_kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\image.py", line 1657, in imsave
+    image.save(fname, **pil_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\PIL\Image.py", line 2585, in save
+    fp = builtins.open(filename, "w+b")
+OSError: [Errno 22] Invalid argument: 'results/sst_plot_2026-05-11 14:55:41.png'
+[2026-05-11 14:55:41] ERROR: Analysis failed!
+[2026-05-11 14:56:10] Starting NetCDF pipeline...
+[2026-05-11 14:56:10] Running Python analysis: data/tos_O1_2001-2002.nc
+Traceback (most recent call last):
+  File "C:\Users\Kubernetus\Desktop\netcdf-pipeline\analyze_data.py", line 19, in <module>
+    plt.savefig(output_file)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\pyplot.py", line 1250, in savefig
+    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backend_bases.py", line 2186, in print_figure
+    result = print_method(
+        filename,
+    ...<3 lines>...
+        bbox_inches_restore=_bbox_inches_restore,
+        **kwargs)
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backend_bases.py", line 2042, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ~~~~^
+        *args, **{k: v for k, v in kwargs.items() if k not in skip}))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backends\backend_agg.py", line 481, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backends\backend_agg.py", line 430, in _print_pil
+    mpl.image.imsave(
+    ~~~~~~~~~~~~~~~~^
+        filename_or_obj, self.buffer_rgba(), format=fmt, origin="upper",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dpi=self.figure.dpi, metadata=metadata, pil_kwargs=pil_kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\image.py", line 1657, in imsave
+    image.save(fname, **pil_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\PIL\Image.py", line 2585, in save
+    fp = builtins.open(filename, "w+b")
+OSError: [Errno 22] Invalid argument: 'results/sst_plot_2026-05-11 14:56:10.png'
+[2026-05-11 14:56:10] ERROR: Analysis failed!
+[2026-05-11 14:56:41] Starting NetCDF pipeline...
+[2026-05-11 14:56:41] Running Python analysis: data/tos_O1_2001-2002.nc
+Traceback (most recent call last):
+  File "C:\Users\Kubernetus\Desktop\netcdf-pipeline\analyze_data.py", line 19, in <module>
+    plt.savefig(output_file)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\pyplot.py", line 1250, in savefig
+    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backend_bases.py", line 2186, in print_figure
+    result = print_method(
+        filename,
+    ...<3 lines>...
+        bbox_inches_restore=_bbox_inches_restore,
+        **kwargs)
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backend_bases.py", line 2042, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ~~~~^
+        *args, **{k: v for k, v in kwargs.items() if k not in skip}))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backends\backend_agg.py", line 481, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\backends\backend_agg.py", line 430, in _print_pil
+    mpl.image.imsave(
+    ~~~~~~~~~~~~~~~~^
+        filename_or_obj, self.buffer_rgba(), format=fmt, origin="upper",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dpi=self.figure.dpi, metadata=metadata, pil_kwargs=pil_kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\matplotlib\image.py", line 1657, in imsave
+    image.save(fname, **pil_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kubernetus\AppData\Local\Programs\Python\Python314\Lib\site-packages\PIL\Image.py", line 2585, in save
+    fp = builtins.open(filename, "w+b")
+OSError: [Errno 22] Invalid argument: 'results/sst_plot_2026-05-11 14:56:41.png'
+[2026-05-11 14:56:41] ERROR: Analysis failed!
+[2026-05-11_14-57-10] Starting NetCDF pipeline...
+[2026-05-11_14-57-10] Running Python analysis: data/tos_O1_2001-2002.nc
+Plot saved to results/sst_plot_2026-05-11_14-57-10.png
+[2026-05-11_14-57-10] SUCCESS: Analysis completed successfully.
+[2026-05-11_14-57-10] NetCDF pipeline finished.
+------------------------------
