@@ -1,0 +1,12 @@
+[2026-05-11 14:29:46] Starting NetCDF pipeline...
+[2026-05-11 14:29:46] Running Python analysis: data/tos_O1_2001-2002.nc
+Plot saved to results/sst_plot.png
+[2026-05-11 14:29:46] SUCCESS: Analysis completed successfully.
+[2026-05-11 14:29:46] NetCDF pipeline finished.
+------------------------------
+[2026-05-11 14:33:59] Starting NetCDF pipeline...
+[2026-05-11 14:33:59] Running Python analysis: data/tos_O1_2001-2002.nc
+Plot saved to results/sst_plot.png
+[2026-05-11 14:33:59] SUCCESS: Analysis completed successfully.
+[2026-05-11 14:33:59] NetCDF pipeline finished.
+------------------------------
