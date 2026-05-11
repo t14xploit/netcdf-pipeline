@@ -1,0 +1,34 @@
+name: netcdf-pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install xarray matplotlib netCDF4
+
+      - name: Make script executable
+        run: chmod +x process.sh
+
+      - name: Run pipeline
+        run: ./process.sh
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: results
+          path: results/
