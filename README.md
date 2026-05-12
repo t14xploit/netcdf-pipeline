@@ -31,12 +31,14 @@ It demonstrates how raw climate data can be:
 
 ## 🚀 How to run locally
 
-### 1. Clone repo
+### 1. Clone the repository
+
+Repository: https://github.com/t14xploit/netcdf-pipeline
+
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/t14xploit/netcdf-pipeline.git
 cd netcdf-pipeline
-
-
+```
 
 🌍 Data source
 
